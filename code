@@ -1,0 +1,194 @@
+import random
+r=random.randint(1,100)
+
+def getinput():
+  while True:
+
+    num = int(input("enter no:"))
+    if num==1:
+      menu()
+    elif(num==2):      
+      order()
+    elif(num==3):
+      if(len(i)!=0):
+       payment()
+      else:
+        print("order not placed")
+        getinput()
+
+    elif(num==4):
+      if(len(i)!=0):
+       cancelorder()
+      else:
+        print("order not placed")
+        getinput()
+    elif(num==5):
+      exit()
+
+    else:
+      print("invalid input")
+    
+def cancelorder():
+  print("your order is cancelled")
+  print("your order no is=",r)
+  print("your order is=",i)
+
+def exit():
+  print("thank u so much for visiting us")
+
+
+
+
+def a():
+ dic={
+  1:"cheese pizza",
+  2:"pepperoni pizza",
+  3:"veggie pizza",
+  4: "hawaiian pizza",
+  5:"meat lovers pizza",
+  6:"margherita pizza",
+  7:"bbq chicken pizza",
+  8:"buffalo chicken pizza",
+  9:"hamburger pizza",
+  10:"chicken pizza"
+}
+                                                              
+ return dic  
+
+
+
+
+def menu():
+  print("here is your menu")
+  dic=a()
+  
+  
+  print(dic)
+ 
+  
+i=[]
+
+def order():
+  print("what would you like to order?")
+  menu()
+  while True:
+    dic=a()
+    o=int(input("enter your order"))
+    if(o==1):
+         print("your order is=",dic[1])
+         i.append(dic[o])
+         print("your order no is=",r)
+         break 
+    elif(o==2):       
+         print("your order is=",dic[2])
+         i.append(dic[o])
+         print("your order no is=",r)
+         break
+    elif(o==3):
+         print("your order is=",dic[3])
+         i.append(dic[o])
+         print("your order no is=",r)
+         break
+    elif(o==4):
+         print("your order is=",dic[4])
+         i.append(dic[o])
+         print("your order no is=",r)
+         break
+    elif(o==5):
+         print("your order is=",dic[5])
+         i.append(dic[o])
+         print("your order no is=",r)
+         break
+    elif(o==6):
+         print("your order is=",dic[6])
+         i.append(dic[o])
+         print("your order no is=",r) 
+         break
+    elif(o==7):
+         print("your order is=",dic[7])
+         i.append(dic[o])
+         print("your order no is=",r)
+         break
+    elif(o==8):
+         print("your order is=",dic[8])
+         i.append(dic[o])
+         print("your order no is=",r) 
+         break
+    elif(o==9):
+         print("your order is=",dic[9])
+         i.append(dic[o])
+         print("your order no is=",r) 
+         break
+    elif(o==10):
+         print("your order is=",dic[10])
+         i.append(dic[o])
+         print("your order no is=",r)
+         print(i) 
+         break
+    else:
+         print("invalid")
+
+def payment():
+  
+    dic=a()
+    for k in i:
+   
+      if k==dic[1]:
+        print("your order is=",dic[1])
+        print("payment is",r*20)
+    
+      elif k==dic[2]:
+        print("your order is=",dic[2])
+        print("payment is",r*21)
+
+      elif k==dic[3]:
+        print("your order is=",dic[3])
+        print("payment is",r*22)
+
+      elif k==dic[4]:
+       print("payment is",r*21)
+       print("your order is=",dic[4])
+
+      elif k==dic[5]:
+       print("payment is",r*22)
+       print("your order is=",dic[5])
+
+      elif k==dic[6]:
+       print("payment is",r*20)
+       print("your order is=",dic[6])
+      elif k==dic[7]:
+       print("payment is",r*23)
+       print("your order is=",dic[7])
+
+      elif k==dic[8]:
+       print("payment is",r*12)
+       print("your order is=",dic[8])
+
+      elif k==dic[9]:
+       print("payment is",r*18)
+       print("your order is=",dic[9])
+
+      elif k==dic[10]:
+       print("payment is",r*14)
+       print("your order is=",dic[10])
+
+      else:
+       print("invalid")
+
+
+
+      def cancelorder():
+        print("your order is cancelled")
+        print("your order no is=",r)
+        print("your order is=",i)
+
+print("Welcome to Raheem's Pizza Shop")
+print("""press 1 to see menu
+press 2 to order
+press 3 for payment
+press 4 for cancel order
+press 5 for exit
+""")
+
+getinput()
+
