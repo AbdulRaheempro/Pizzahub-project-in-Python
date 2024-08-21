@@ -1,0 +1,23 @@
+This Python script simulates a simple pizza ordering system for Raheem's Pizza Shop. The system allows users to view a menu, place orders, make payments, cancel orders, and exit the program. The script utilizes a random order number for each session and maintains a list of ordered items.
+
+Features
+View Menu: Displays the available pizza options with their corresponding numbers.
+Place Order: Allows users to select pizzas from the menu and add them to their order.
+Payment: Calculates the payment based on the pizzas ordered and displays the total cost.
+Cancel Order: Cancels the current order and clears the order list.
+Exit: Ends the program and thanks the user for visiting.
+How It Works
+Random Order Number: Each session starts with a random order number generated using random.randint(1, 100).
+Menu Function (menu()): Prints out the available pizza options from a predefined dictionary.
+Order Function (order()): Lets users place an order by selecting a pizza number from the menu. Orders are stored in a global list i.
+Payment Function (payment()): Calculates the total payment based on the items in the order list. Each pizza has a different price multiplier based on the random order number.
+Cancel Order Function (cancelorder()): Cancels the order and clears the order list.
+Exit Function (exit()): Ends the program and provides a thank you message.
+Usage
+Run the script.
+Follow the prompts to interact with the system:
+Press 1 to view the menu.
+Press 2 to place an order.
+Press 3 to make a payment (only if an order has been placed).
+Press 4 to cancel the order (only if an order has been placed).
+Press 5 to exit the program.
